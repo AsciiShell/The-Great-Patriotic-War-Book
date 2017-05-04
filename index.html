@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="jquery.booklet.latest.css" type="text/css" rel="stylesheet"/>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="booklet/jquery-2.1.0.min.js"><\/script>')
+        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script src="jquery.easing.1.3.js"></script>
+        <script src="jquery.booklet.latest.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Великая Отечественная война</title>
+        <style type="text/css">
+            img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body style="background: skyblue;">
+        <div id="mybook" style="width:100%;height:100%;">
+            <div>
+                <img src="/img/01.png">
+            </div>
+            <div>
+                <img src="/img/02.png">
+            </div>
+            <div>
+                <img src="/img/03.png">
+            </div>
+            <div>
+                <img src="/img/04.png">
+            </div>
+            <div>
+                <img src="/img/05.png">
+            </div>
+            <div>
+                <img src="/img/06.png">
+            </div>
+            <div>
+                <img src="/img/07.png">
+            </div>
+            <div>
+                <img src="/img/08.png">
+            </div>
+            <div>
+                <img src="/img/09.png">
+            </div>
+            <div>
+                <img src="/img/10.png">
+            </div>
+            <div>
+                <img src="/img/11.png">
+            </div>
+            <div>
+                <img src="/img/12.png">
+            </div>
+            <div>
+                <img src="/img/13.png">
+            </div>
+            <div>
+                <img src="/img/14.png">
+            </div>
+            <div>
+                <img src="/img/15.png">
+            </div>
+            <div>
+                <img src="/img/16.png">
+            </div>
+            <div>
+                <img src="/img/17.png">
+            </div>
+            <div>
+                <img src="/img/18.png">
+            </div>
+            <div>
+                <img src="/img/19.png">
+            </div>
+            <div>
+                <img src="/img/20.png">
+            </div>
+            <div>
+                <img src="/img/21.png">
+            </div>
+            <div>
+                <img src="/img/22.png">
+            </div>
+            <div>
+                <img src="/img/23.png">
+            </div>
+            <div>
+                <img src="/img/24.png">
+            </div>
+            <div>
+                <img src="/img/25.png">
+            </div>
+            <div>
+                <img src="/img/26.png">
+            </div>
+            <div>
+                <img src="/img/27.png">
+            </div>
+            <div>
+                <img src="/img/28.png">
+            </div>
+            <div>
+                <img src="/img/29.png">
+            </div>
+            <div>
+                <img src="/img/30.png">
+            </div>
+            <div>
+                <img src="/img/31.png">
+            </div>
+            <div>
+                <img src="/img/32.png">
+            </div>
+            <div>
+                <img src="/img/33.png">
+            </div>
+            <div>
+                <img src="/img/34.png">
+            </div>
+            <div>
+                <img src="/img/35.png">
+            </div>
+        </div>
+    </body>
+    <script>
+        $(function() {
+            //single book
+            $('#mybook').booklet({
+                width: 1296,
+                height: 910
+
+            });
+        });
+        document.getElementsByTagName('img').ondragstart = function() {
+            return false;
+        }
+        ;
+        var img = document.getElementsByTagName('img');
+
+        for (var i in img) {
+            img[i].oncontextmenu = function() {
+                return false;
+            }
+        }
+    </script>
+</html>
